@@ -1,0 +1,26 @@
+<table id="customers"> 
+ <thead> 
+     <tr>
+      <th>Product</th>
+      <th>Price</th>
+      <th>Amount</th> 
+      <th>Total</th> 
+      <th>Option</th>
+    </tr>
+ </thead> 
+ <tbody> 
+     <tr *ngFor="let good of cart; index as i"> 
+        <td>  <img [src]="good.photoUrl" alt=""> </td> 
+        <td> {{good.price | currency}} </td> 
+        <td>
+          <input type="number" class="form-control" placeholder="amount (kg)" [(ngModel)]="good.amount" >
+        </td>
+        <td> {{ (good.price * good.amount) | currency}} </td> 
+        <td> 
+        <button class="btn btn-primary" (click)="save(i)"> save </button>
+        <button class="btn btn-danger" (click)="delete(i)"> delete </button>
+
+      </td>
+     </tr>
+ </tbody>
+</table>

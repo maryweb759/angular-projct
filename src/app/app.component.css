@@ -1,0 +1,7 @@
+
+:host ::ng-deep .btn { 
+    color:rgb(215, 217, 243)
+} 
+app-navbar { 
+    width:100%;
+} 
