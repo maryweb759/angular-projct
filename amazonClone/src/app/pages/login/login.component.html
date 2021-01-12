@@ -1,0 +1,18 @@
+<div class="login"> 
+    <div class="login_container"> 
+        <img routerLink="/" src="../../../assets/logo-amazon-1.jpg" alt="" class="login_logo"> 
+
+        <div class="login_forms"> 
+            <h1>logIn</h1>
+            <form action="" [formGroup]="loginForm"> 
+                <h5>email</h5> 
+                <input type="email" formControlName="email" name=""> 
+                <h5>password</h5> 
+                <input type="password" formControlName="password" name="" > 
+                <button class="logIn_signIn_button" (click)="signIn()">sign In</button> 
+                <p class="login_terms"> By continuing, you agree to amazon conditions of use and privacy</p>
+                <button class="logIn_create_button" (click)="createAccount()"> create amazon account</button>
+            </form>
+        </div>
+    </div>
+</div>

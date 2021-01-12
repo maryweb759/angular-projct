@@ -1,0 +1,38 @@
+
+.container { 
+    display:flex; 
+    width: 100%; 
+    flex-wrap: wrap;
+}
+.checkout{
+    background:none;
+    display: flex;
+    padding-right: 6px;
+    /* margin: 20px; */
+    width: 58%;
+    /* min-height: 400px; */
+    
+ 
+}
+.checkout_left{
+    flex: 1; 
+   
+}
+.checkout_empty{
+    margin: 20px 20px 400px 20px ;
+   
+} 
+.checkout_right { 
+    width:40%; 
+    
+}
+
+@media only screen and (max-width: 700px) {
+   .container { 
+    flex:none; 
+    flex-direction: row;
+   } 
+   .checkout { 
+    width: 100%
+}
+  }
