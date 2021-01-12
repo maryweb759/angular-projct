@@ -2,6 +2,6 @@ export interface Shopping {
     amount?: number,
     name?: string,
     price?: number,
-    id?: string; 
-    photoUrl?: string;
+    id?: string,
+    photoUrl?:string,
    }
