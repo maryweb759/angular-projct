@@ -36,15 +36,7 @@ import { AngularFireModule } from '@angular/fire';
     AppRoutingModule, 
     HttpClientModule, 
     ReactiveFormsModule, 
-    AngularFireModule.initializeApp({
-        apiKey: "AIzaSyDqRJgEDssMu-L1TmmoFmb9y0W5Sv0oAg0",
-        authDomain: "clone-667f3.firebaseapp.com",
-        projectId: "clone-667f3",
-        storageBucket: "clone-667f3.appspot.com",
-        messagingSenderId: "685525771444",
-        appId: "1:685525771444:web:85bb20264e97ac1bcfa3e1",
-        measurementId: "G-G749HLVWRD"
-      })
+    AngularFireModule.initializeApp()
    
   ],
   providers: [],
