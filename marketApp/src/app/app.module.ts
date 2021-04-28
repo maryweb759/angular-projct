@@ -40,15 +40,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     NgbModule,
     NgbModule,
     FormsModule,
-    AngularFireModule.initializeApp({
-      apiKey: "AIzaSyAef28uQTCNIF_ExPzYmvNIpR4T6eGodLg",
-      authDomain: "market-f6ead.firebaseapp.com",
-      projectId: "market-f6ead",
-      storageBucket: "market-f6ead.appspot.com",
-      messagingSenderId: "879191000963",
-      appId: "1:879191000963:web:2677562baaa6163c8898b6",
-      measurementId: "G-5FKC7H4NJH"
-    }), 
+    AngularFireModule.initializeApp(), 
     AngularFirestoreModule, 
     AngularFireAuthModule,
     AngularFireStorageModule, 
